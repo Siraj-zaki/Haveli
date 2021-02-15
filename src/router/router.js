@@ -5,7 +5,7 @@ class ReactRouter extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/Home" component={Home} />
       </React.Fragment>
     );
   }
