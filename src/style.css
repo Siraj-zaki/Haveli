@@ -12,7 +12,10 @@ body {
 }
 
 .logo-1 {
-    margin-left: 5vw!important;
+    margin-left: 2vw!important;
+}
+.display{
+    display: none!important;
 }
 
 .MuiTypography-body1 {
@@ -253,11 +256,18 @@ header {
 @media(max-width:1024px) {
     .grid {
         flex-direction: column!important;
+        padding: 0px;
+    }
+    .right-side{
+        display: none!important;
     }
     .grid-1 {
         margin: 50px;
     }
     .grid-2 {
         margin: 50px;
+    }
+    .logo-1{
+        margin: 0px;
     }
 }

@@ -5,12 +5,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Drawer from './drawer'
 import logo from '../assets/logo.png'
+import cod from '../assets/cod.png'
+import counter from '../assets/counter.png'
 import jett from '../assets/jett.png'
 import video1 from '../assets/jett.mp4'
 import omen from '../assets/omen.png'
@@ -50,6 +51,12 @@ class Home extends React.Component {
                             <Button className="logo-1">
                                 <img src={logo} height="30" width="50" alt="" />
                             </Button>
+                            <Button className="logo-1">
+                                <img src={cod} height="40" width="50" alt="" />
+                            </Button>
+                            <Button className="logo-1">
+                                <img src={counter} height="40" width="50" alt="" />
+                            </Button>
                             <SearchBar />
                             <div className="right-side">
                                 <Button className="link link-1">Home</Button>
@@ -72,11 +79,11 @@ class Home extends React.Component {
                         <div className="grid">
                             <div className="grid-1">
 
-                                <img className="img-1" src={jett} height="auto" width="350" alt="" />
+                                <img className="img-1" src={jett} height="auto" width="320" alt="" />
                             </div>
 
                             <div className="grid-2">
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
                                     <CardContent className="card-content">
                                         <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>JETT</h1>
                                         <p style={{ padding: 10, color: 'white' }}>"Representing her home country
@@ -117,7 +124,7 @@ class Home extends React.Component {
                         </video>
                         <div className="grid">
                             <div className="grid-1">
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
                                     <CardContent className="card-content">
                                         <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>OMEN</h1>
                                         <p style={{ padding: 10, color: 'white' }}>Omen hunts in the shadows.
@@ -144,7 +151,7 @@ class Home extends React.Component {
 
                             </div>
                             <div className="grid-2">
-                                <img className="img-1" onMouseOver src={omen} height="auto" width="350" alt="" />
+                                <img className="img-1" onMouseOver src={omen} height="auto" width="320" alt="" />
                             </div>
                         </div>
                     </section>
@@ -156,11 +163,11 @@ class Home extends React.Component {
                         <div className="grid">
                             <div className="grid-1">
 
-                                <img className="img-1" onMouseOver src={pheonix} height="auto" width="350" alt="" />
+                                <img className="img-1" onMouseOver src={pheonix} height="auto" width="320" alt="" />
                             </div>
                             <div className="grid-2">
 
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
                                     <CardContent className="card-content">
                                         <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>PHEONIX</h1>
                                         <p style={{ padding: 10, color: 'white' }}>Phoenix’s star power shines through
@@ -187,63 +194,115 @@ class Home extends React.Component {
                     <section className="our-team">
                         <div className="grid">
                             <div className="grid-1">
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
                                     <CardContent className="card-content">
-                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>FC CLAN</h1>
+                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>COD 4 Players</h1>
                                         <li style={{ padding: 10, color: 'white' }}>
-                                            HARRY GUNDA
+                                            HARRIS (HARRY GUNDA)
                                         </li>
                                         <li style={{ padding: 10, color: 'white' }}>
-                                            JILLAD
+                                            SIRAJ MUNEER (PARZIVAL)
                                         </li>
                                         <li style={{ padding: 10, color: 'white' }}>
-                                            TSM BIG SMOKE
-                                        </li>
-                                        <li style={{ padding: 10, color: 'white' }}>
-                                            TSM SUBORAZA
-                                        </li>
-                                        <li style={{ padding: 10, color: 'white' }}>
-                                            TSM BIRD
-                                        </li>
-                                        <li style={{ padding: 10, color: 'white' }}>
-                                            TSM BLOODY VENOM
-                                        </li>
-
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button style={{ padding: 10 }} size="small">Learn More</Button>
-                                    </CardActions>
-                                </Card>
-
-                            </div>
-                            <div className="grid-2">
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
-                                    <CardContent className="card-content">
-                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>NO CLAN</h1>
-                                        <li style={{ padding: 10, color: 'white' }}>
-                                            SIRAJ MUNEER
-                                        </li>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button style={{ padding: 10 }} size="small">Learn More</Button>
-                                    </CardActions>
-                                </Card>
-                            </div>
-                            <div className="grid-2">
-                                <Card className="card-style" style={{ width: '350px', minWidth: '300px' }}>
-                                    <CardContent className="card-content">
-                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>MM CLAN</h1>
-                                        <li style={{ padding: 10, color: 'white' }}>
-                                            MAJOR SAAB
+                                            JILLAD (FC DICKTAKER)
                                         </li>
                                         <li style={{ padding: 10, color: 'white' }}>
                                             MOOSA
                                         </li>
                                         <li style={{ padding: 10, color: 'white' }}>
-                                            NAWAZ SHEREEF
+                                            MAJOR SAAB
                                         </li>
                                         <li style={{ padding: 10, color: 'white' }}>
-                                            DEAD PERSON
+                                            BIG SMOKE
+                                        </li>
+
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button style={{ padding: 10 }} size="small">Learn More</Button>
+                                    </CardActions>
+                                </Card>
+
+                            </div>
+                            <div className="grid-2">
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
+                                    <CardContent className="card-content">
+                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>CSGO</h1>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            HARRIS (HARRY GUNDA)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            SIRAJ MUNEER (PARZIVAL)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            JILLAD (FC DICKTAKER)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            MOOSA
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            MAJOR SAAB
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            BIG SMOKE
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            SEZZEK
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            NAWAZ
+                                        </li>
+
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button style={{ padding: 10 }} size="small">Learn More</Button>
+                                    </CardActions>
+                                </Card>
+                            </div>
+                            <div className="grid-2">
+                                <Card className="card-style" style={{ width: '320px', minWidth: '300px' }}>
+                                    <CardContent className="card-content">
+                                        <h1 className="heading" style={{ fontWeight: 'bold', padding: 10, color: 'white' }}>VALORANT</h1>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            HARRIS (HARRY GUNDA)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            SIRAJ MUNEER (PARZIVAL)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            JILLAD (FC DICKTAKER)
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            MOOSA
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            MAJOR SAAB
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            BIG SMOKE
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            KILLER
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            BLOODY VENOM
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            COMISSNER 47
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                           UMER 
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                           BIG BIRD
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            SEZZEK
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                            NAWAZ
+                                        </li>
+                                        <li style={{ padding: 10, color: 'white' }}>
+                                           DEAD PERSON
                                         </li>
 
                                     </CardContent>
